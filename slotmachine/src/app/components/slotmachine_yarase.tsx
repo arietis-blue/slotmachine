@@ -92,7 +92,6 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ options, index }) => {
     waitForStopStart();
   };
   
-
   return (
     <div className="flex flex-col items-center justify-center my-10 p-5 w-[1400px] border-gray-600 rounded-2xl border-4">
     <div className="slot-machine h-[500px] w-[1300px] flex justify-center overflow-hidden relative border-2 rounded-2xl border-blue-800">
