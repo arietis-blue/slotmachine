@@ -1,5 +1,6 @@
 import React from 'react';
-import SlotMachine from './components/slotmachine';
+// import SlotMachine from './components/slotmachine';  //notやらせ
+import SlotMachine from './components/slotmachine_yarase';  //やらせ
 
 const App: React.FC = () => {
   const options = [
@@ -16,9 +17,12 @@ const App: React.FC = () => {
 
   return (
     <div className="App h-screen py-10 flex flex-col items-center bg-black">
-      <h1 className="text-6xl text-white font-bold mb-5">トークテーマ</h1>
+      <h1 className="text-6xl text-white font-bold mb-5"></h1>
       <div className="w-full flex justify-center">
-        <SlotMachine options={options} />
+        {/* notやらせ */}
+        <SlotMachine options={options} index={5} />
+        {/* やらせ */}
+        {/* <SlotMachine options={options} index={5} /> */}
       </div>
     </div>
   );
