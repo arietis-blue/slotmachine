@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 
+
 interface SlotMachineProps {
   options: string[];
 }
@@ -11,7 +12,7 @@ const SlotMachine: React.FC<SlotMachineProps> = ({ options }) => {
   const [isSpinning, setIsSpinning] = useState<boolean>(false);
   const speed = useRef({ value: 0 });
   const y = useRef(0);
-  const picHeight = 400;
+  const picHeight = 400; 
   const len = options.length;
   const animationFrameId = useRef<number | null>(null);
 
